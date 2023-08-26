@@ -11,5 +11,5 @@ npm run build
 ```
 
 The following is the description of the bug:
-- Actual behavior: Then open `dist/main.js` and you should see that the huge JSON payload is embedded as `JSON.parse(...)` although this is unused.
+- Actual behavior: `dist/main.js` includes the huge JSON payload in the form of `JSON.parse(...)` although this is unused.
 - Expected behavior: We should not see the JSON payload embedded.
